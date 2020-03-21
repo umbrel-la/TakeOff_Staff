@@ -1,0 +1,112 @@
+.contacts {
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  .input_field {
+    font-size: 16px;
+    padding: 10px;
+    display: block;
+    width: 300px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 3px;
+  }
+  .input_field:focus {
+    outline: none;
+  }
+  
+  .contacts_list {
+    padding: 0;
+    width: 100%;
+  }
+  
+  .contact {
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    width: 100%;
+    padding: 5px;
+    border-bottom: 1px dotted grey;
+  }
+  
+  .contact_image {
+      border-radius: 50%;
+      margin: 5px;
+  }
+  
+  .contact_name {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .contact_number {
+    font-size: 18px;
+    color: grey;
+  }
+
+  .btn_add {
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    color: white;
+    padding: 14px 24px;
+    margin: 10px 20px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
+    transition: .5s;
+  }
+  .btn_add:hover {
+    background-position: right center;
+  }
+
+  .btn_delete {
+	position: relative;
+    padding: 3px 6px;
+	margin: 0 15px;
+	font-family: 'Montserrat Alternates', sans-serif;
+	color: white;
+	font-weight: 600;
+	background: #c81965;
+	border-width: 0;	
+	outline: none;
+	cursor: pointer;
+}
+.btn_delete:before,
+.btn_delete:after{
+	content: "";
+	position: absolute;
+	height: 50%;
+	width: 100%;
+	background: #c81965;
+	transition: .3s cubic-bezier(.75,.24,.01,.9);
+}
+.btn_delete:before { 
+	top: 0;
+	right: -5px; 
+}
+.btn_delete:after { 
+	bottom: 0;
+	left: -5px;  
+}
+.btn_delete:hover:before {
+	transform: translateX(-5px);
+}
+.btn_delete:hover:after {
+	transform: translateX(5px);
+}
+
+
+.text {
+    position: relative;
+	z-index: 2;
+}
+
+.btn_change {
+    background: green;
+}
